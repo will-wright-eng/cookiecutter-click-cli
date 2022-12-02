@@ -2,23 +2,31 @@
 
 ## TODO
 
-- first thoughts
-	- add setup.py or pyproject.toml option
+- modify
 	- cleanup Makefile
-	- remove release-drafter
 	- tone down dependabot
 	- do something to tone down workflows... not sure what
-	- add pre-commit plugins that I like
-	- add codeowners file
-	- add publishing instructions
-	- remove docker
-	- add Windows/Linux installs to GHA
-- from setup notes
 	- fix click/black discrepency
-	- add python3.10 as default/ remove <3.8
-	- add instructions for cli dev: `pip install -e .`
-	- add good variety of bultin functions/methods --> ref docs
-		- create explicity code notes
+- remove
+	- release-drafter
+	- docker & dockerignore
+	- code coverage
+- add
+	- pre-commit plugins that I like
+	- codeowners file
+	- publishing instructions
+	- Windows/Linux installs to GHA
+	- from setup notes
+		- python3.10 as default/ remove <3.8
+		- instructions for cli dev: `pip install -e .`
+		- good variety of bultin functions/methods --> ref docs
+			- create explicity code notes
+- add cookiecutter options
+	- open source boiler docs? ie SECURITY, CODE_OF_CONDUCT, CONTRIBUTING
+	- setup.py or pyproject.toml option
+
+---
+---
 
 1. make a bunch of changes
 2. test cookiecutter setup
@@ -27,7 +35,7 @@
 
 ## additonal OS testing
 
-[see waynerv project]()
+[see waynerv project](https://github.com/waynerv/cookiecutter-pypackage)
 
 ```yaml
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
