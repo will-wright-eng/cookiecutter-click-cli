@@ -1,5 +1,55 @@
 # cookiecutter-click-cli
 
+## TODO
+
+- first thoughts
+	- add setup.py or pyproject.toml option
+	- cleanup Makefile
+	- remove release-drafter
+	- tone down dependabot
+	- do something to tone down workflows... not sure what
+	- add pre-commit plugins that I like
+	- add codeowners file
+	- add publishing instructions
+	- remove docker
+	- add Windows/Linux installs to GHA
+- from setup notes
+	- fix click/black discrepency
+	- add python3.10 as default/ remove <3.8
+	- add instructions for cli dev: `pip install -e .`
+	- add good variety of bultin functions/methods --> ref docs
+		- create explicity code notes
+
+1. make a bunch of changes
+2. test cookiecutter setup
+3. document setup flow
+4. build out GHA
+
+## additonal OS testing
+
+[see waynerv project]()
+
+```yaml
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "test"
+  test:
+    # The type of runner that the job will run on
+    strategy:
+      matrix:
+        python-versions: [3.6, 3.7, 3.8, 3.9]
+        os: [ubuntu-18.04, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+```
+
+## link dump -- cookiecutter projects
+
+- [click-app/cli.py at main · simonw/click-app](https://github.com/simonw/click-app/blob/main/%7B%7Bcookiecutter.hyphenated%7D%7D/%7B%7Bcookiecutter.underscored%7D%7D/cli.py)
+- [fpgmaas/cookiecutter-poetry: A modern cookiecutter template for Python projects that use Poetry for dependency management](https://github.com/fpgmaas/cookiecutter-poetry)
+- [s3rius/FastAPI-template: Feature rich robust FastAPI template.](https://github.com/s3rius/FastAPI-template)
+- [TezRomacH/python-package-template: 🚀 Your next Python package needs a bleeding-edge project structure.](https://github.com/TezRomacH/python-package-template)
+- [waynerv/cookiecutter-pypackage: A tool for creating skeleton python project, built with popular develop tools and conform to best practice.](https://github.com/waynerv/cookiecutter-pypackage)
+
 ## setup notes
 
 ```bash
