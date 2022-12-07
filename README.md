@@ -16,6 +16,7 @@
 	- codeowners file
 	- publishing instructions
 	- Windows/Linux installs to GHA
+	- click docs: https://click.palletsprojects.com/
 	- from setup notes
 		- python3.10 as default/ remove <3.8
 		- instructions for cli dev: `pip install -e .`
