@@ -11,14 +11,14 @@ rm -fr test
 ## TODO
 
 - modify
-	- cleanup Makefile
+	- ~cleanup Makefile~
 	- tone down dependabot
 	- do something to tone down workflows... not sure what
-	- fix click/black discrepency
+	- ~fix click/black discrepency~
 - remove
 	- release-drafter
 	- docker & dockerignore
-	- code coverage
+	- ~code coverage~
 - add
 	- pre-commit plugins that I like
 	- codeowners file
