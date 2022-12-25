@@ -12,21 +12,21 @@ rm -fr test
 
 - modify
 	- ~cleanup Makefile~
-	- tone down dependabot
+	- ~tone down dependabot~
 	- do something to tone down workflows... not sure what
 	- ~fix click/black discrepency~
 - remove
-	- release-drafter
+	- ~release-drafter~
 	- docker & dockerignore
 	- ~code coverage~
 - add
 	- pre-commit plugins that I like
-	- codeowners file
+	- ~codeowners file~
 	- publishing instructions
 	- Windows/Linux installs to GHA
 	- click docs: https://click.palletsprojects.com/
 	- from setup notes
-		- python3.10 as default/ remove <3.8
+		- python3.10 as default/ ~remove <3.8~
 		- instructions for cli dev: `pip install -e .`
 		- good variety of bultin functions/methods --> ref docs
 			- create explicity code notes
