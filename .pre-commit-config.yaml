@@ -3,7 +3,7 @@ default_language_version:
 
 default_stages: [commit, push]
 
-exclude: ^{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/
+exclude: ^({{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}\/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.5.0
