@@ -5,9 +5,6 @@ import textwrap
 from pathlib import Path
 from shutil import move, rmtree
 
-from rich.console import Console
-from rich.markdown import Markdown
-
 # Project root directory
 PROJECT_DIRECTORY = Path.cwd().absolute()
 PROJECT_NAME = "{{ cookiecutter.project_name }}"
@@ -67,8 +64,6 @@ def print_futher_instuctions(project_name: str, github: str) -> None:
         project_name: current project name
         github: GitHub username
     """
-    console = Console()
-
     message = f"""
     Your project {project_name} is created.
 
@@ -97,9 +92,7 @@ def print_futher_instuctions(project_name: str, github: str) -> None:
         $ git remote add origin https://github.com/{github}/{project_name}.git
         $ git push -u origin main
     """
-    # print(textwrap.dedent(message))
-    md = Markdown(message)
-    console.print(md)
+    print(textwrap.dedent(message))
 
 
 def main() -> None:
