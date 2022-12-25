@@ -19,10 +19,10 @@ ORGANIZATION = "{{ cookiecutter.organization }}"
 GITHUB_USER = "{{ cookiecutter.github_name }}"
 
 licences_dict = {
-    "MIT": "mit",
-    "BSD-3": "bsd3",
     "GNU GPL v3.0": "gpl3",
     "Apache Software License 2.0": "apache",
+    "MIT": "mit",
+    "BSD-3": "bsd3",
 }
 
 
