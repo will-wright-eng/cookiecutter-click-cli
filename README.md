@@ -1,5 +1,13 @@
 # cookiecutter-click-cli
 
+## setting up new project
+
+```bash
+cd ..
+cookiecutter cookiecutter-click-cli/ -o test --no-input
+rm -fr test
+```
+
 ## TODO
 
 - modify
