@@ -36,7 +36,6 @@ codestyle: ## command description
 #* Linting
 test: ## command description
 	PYTHONPATH=$(PYTHONPATH) poetry run pytest -c pyproject.toml --cov-report=html --cov=hooks tests/
-	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 check-codestyle: ## command description
 	poetry run isort --diff --check-only --settings-path pyproject.toml hooks tests
@@ -52,7 +51,7 @@ check-safety: ## command description
 	poetry run bandit -ll --recursive hooks
 
 update-dev-deps: ## command description
-	poetry add -D bandit@latest darglint@latest "isort[colors]@latest" mypy@latest pre-commit@latest pydocstyle@latest pylint@latest pytest@latest pyupgrade@latest safety@latest coverage@latest coverage-badge@latest pytest-html@latest pytest-cov@latest
+	poetry add -D bandit@latest darglint@latest "isort[colors]@latest" mypy@latest pre-commit@latest pydocstyle@latest pylint@latest pytest@latest pyupgrade@latest safety@latest pytest-html@latest pytest-cov@latest
 	poetry add -D --allow-prereleases black@latest
 
 #* Cleaning

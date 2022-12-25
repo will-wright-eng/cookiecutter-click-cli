@@ -46,15 +46,13 @@ pylint = "^2.11.1"
 pytest = "^6.2.5"
 pyupgrade = "^2.29.1"
 safety = "^1.10.3"
-coverage = "^6.1.2"
-coverage-badge = "^1.1.0"
 pytest-html = "^3.1.1"
 pytest-cov = "^3.0.0"
 
 [tool.black]
 # https://github.com/psf/black
 target-version = ["py37"]
-line-length = 100
+line-length = 120
 color = true
 
 exclude = '''
@@ -76,7 +74,7 @@ exclude = '''
 [tool.isort]
 # https://github.com/timothycrosley/isort/
 py_version = 37
-line_length = 100
+line_length = 120
 
 known_typing = ["typing", "types", "typing_extensions", "mypy", "mypy_extensions"]
 sections = ["FUTURE", "TYPING", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
@@ -127,17 +125,3 @@ addopts = [
   "--doctest-modules",
   "--doctest-continue-on-failure",
 ]
-
-
-[tool.coverage.run]
-source = ["tests"]
-
-[coverage.paths]
-source = "hooks"
-
-[coverage.run]
-branch = true
-
-[coverage.report]
-fail_under = 50
-show_missing = true
