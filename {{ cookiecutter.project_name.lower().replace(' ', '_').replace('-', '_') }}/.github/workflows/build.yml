@@ -39,5 +39,4 @@ jobs:
 
     - name: Run safety checks
       run: |
-        make check-safety
-{% endraw %}
+        make check-safety{% endraw %}
