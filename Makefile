@@ -27,6 +27,9 @@ install: ## command description
 pre-commit-install: ## command description
 	poetry run pre-commit install
 
+pre-commit-run: ## command description
+	poetry run pre-commit run --all-files
+
 #* Formatters
 codestyle: ## command description
 	poetry run pyupgrade --exit-zero-even-if-changed --py37-plus **/*.py
