@@ -5,8 +5,13 @@
 ### OSX ###
 # General
 .DS_Store
+**/.DS_Store
+
 .AppleDouble
 .LSOverride
+
+Untitled.*
+**/Untitled.*
 
 # Icon must end with two \r
 Icon
