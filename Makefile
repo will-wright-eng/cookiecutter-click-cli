@@ -13,10 +13,10 @@ help: ## command description list make commands
 
 #* Poetry
 poetry-download: ## command description
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) -
+	curl -sSL https://install.python-poetry.org | $(PYTHON) -
 
 poetry-remove: ## command description
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) - --uninstall
+	curl -sSL https://install.python-poetry.org | $(PYTHON) - --uninstall
 
 #* Installation
 install: ## command description
@@ -32,8 +32,6 @@ codestyle: ## command description
 	poetry run pyupgrade --exit-zero-even-if-changed --py37-plus **/*.py
 	poetry run isort --settings-path pyproject.toml hooks tests
 	poetry run black --config pyproject.toml hooks tests
-
-# formatting: ## command description codestyle
 
 #* Linting
 test: ## command description
@@ -52,8 +50,6 @@ check-safety: ## command description
 	poetry check
 	poetry run safety check --full-report
 	poetry run bandit -ll --recursive hooks
-
-# lint: ## command description test check-codestyle mypy check-safety
 
 update-dev-deps: ## command description
 	poetry add -D bandit@latest darglint@latest "isort[colors]@latest" mypy@latest pre-commit@latest pydocstyle@latest pylint@latest pytest@latest pyupgrade@latest safety@latest coverage@latest coverage-badge@latest pytest-html@latest pytest-cov@latest
