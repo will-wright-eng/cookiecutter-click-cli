@@ -33,7 +33,7 @@ pre-commit-install: ## command description
 
 #* Formatters
 codestyle: ## command description
-	poetry run pyupgrade --exit-zero-even-if-changed --py{{ cookiecutter.minimal_python_version.replace('.', '') }}-plus **/*.py
+	poetry run pyupgrade --exit-zero-even-if-changed --py310-plus **/*.py
 	poetry run isort --settings-path pyproject.toml ./
 	poetry run black --config pyproject.toml ./
 

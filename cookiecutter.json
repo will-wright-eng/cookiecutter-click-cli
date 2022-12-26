@@ -3,8 +3,6 @@
   "project_description": "`{{ cookiecutter.project_name.lower().replace(' ', '-') }}` is a python command line interface",
   "organization": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
   "license": ["GNU GPL v3.0", "Apache Software License 2.0", "MIT", "BSD-3"],
-  "_all_python_minor_version": [9, 10],
-  "minimal_python_version": [3.9, 3.10],
   "github_name": "{{ cookiecutter.organization.lower().replace(' ', '_').replace('-', '_') }}",
   "email": "hello@{{ cookiecutter.organization.lower().replace(' ', '-') }}.com",
   "version": "0.1.0",
