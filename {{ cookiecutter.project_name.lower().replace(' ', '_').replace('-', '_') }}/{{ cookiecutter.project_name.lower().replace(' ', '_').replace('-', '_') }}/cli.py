@@ -2,8 +2,8 @@
 
 import click
 from click import echo
-
 from common_sync.utils import hello
+
 
 @click.group()
 @click.version_option()
